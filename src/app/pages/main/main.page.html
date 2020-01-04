@@ -1,0 +1,12 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>main</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-button (click)="onClick()">
+    Show/hide drawer component
+  </ion-button>
+  <app-drawer [(drawerCurrentState)]="currentState" (childStateChange)="processChildStateChange($event)"></app-drawer>  
+</ion-content>
